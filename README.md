@@ -25,8 +25,8 @@
 <p>
   <img alt="Static Badge" src="https://img.shields.io/badge/Solidity-%E2%9C%93-black">
   <img alt="Static Badge" src="https://img.shields.io/badge/Foundry-%E2%9C%93-%23C21325">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Chainlink-%E2%9C%93-blue">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Chainlink Automation-%E2%9C%93-lightblue">
+  <img alt="Static Badge" src="https://img.shields.io/badge/OpenZeppelin-%E2%9C%93-blue">
+  <img alt="Static Badge" src="https://img.shields.io/badge/IPFS-%E2%9C%93-lightblue">
 </p>
 
 ## Foundry
