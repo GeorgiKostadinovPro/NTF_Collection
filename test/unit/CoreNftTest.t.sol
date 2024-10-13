@@ -7,7 +7,7 @@ import {DeployCoreNft} from "../../script/DeployCoreNft.s.sol";
 
 contract CoreNftTest is Test {
     string private constant NFT_IPFS =
-        "ipfs://QmPX6RjAP33XSzfw9xfCcwrEFYZJu4qY3eZVKcesZW9bXP/?filename=dog-nft.json";
+        "https://ipfs.io/ipfs/QmPX6RjAP33XSzfw9xfCcwrEFYZJu4qY3eZVKcesZW9bXP/?filename=dog-nft.json";
     DeployCoreNft private deployer;
     CoreNft private coreNft;
     address private USER = makeAddr("USER");

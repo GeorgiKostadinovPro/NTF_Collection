@@ -7,7 +7,7 @@ import {DevOpsTools} from "../lib/foundry-devops/src/DevOpsTools.sol";
 
 contract MintCoreNft is Script {
     string private constant NFT_IPFS =
-        "ipfs://QmPX6RjAP33XSzfw9xfCcwrEFYZJu4qY3eZVKcesZW9bXP/?filename=dog-nft.json";
+        "https://ipfs.io/ipfs/QmPX6RjAP33XSzfw9xfCcwrEFYZJu4qY3eZVKcesZW9bXP/?filename=dog-nft.json";
 
     function run() external {
         address mostRecentlyDeployed = DevOpsTools.get_most_recent_deployment(
