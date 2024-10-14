@@ -7,8 +7,8 @@ import {Base64} from "@openzeppelin/contracts/utils/Base64.sol";
 
 contract DeployMoodifyNft is Script {
     function run() external returns (MoodifyNft) {
-        string memory happySvg = vm.readFile("./assets/dynamicNft/happy.svg");
-        string memory sadSvg = vm.readFile("./assets/dynamicNft/sad.svg");
+        string memory happySvg = vm.readFile("./assets/moodNft/happy.svg");
+        string memory sadSvg = vm.readFile("./assets/moodNft/sad.svg");
 
         vm.startBroadcast();
         MoodifyNft moodifyNft = new MoodifyNft(

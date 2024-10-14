@@ -15,6 +15,7 @@ contract MoodifyNft is ERC721 {
     uint256 private s_count;
     string private s_happyImageUri;
     string private s_sadImageUri;
+
     mapping(uint256 => Mood) private s_tokenIdToMood;
 
     constructor(

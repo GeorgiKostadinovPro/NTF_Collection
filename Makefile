@@ -1,6 +1,6 @@
 -include .env
 
-.PHONY: all test clean deploy fund help install snapshot format anvil zktest
+.PHONY: all test clean deploy fund help install snapshot format anvil zktest deploy-core-nft deploy-moodify-nft
 
 DEFAULT_ANVIL_KEY := 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
 
@@ -35,8 +35,19 @@ ifeq ($(findstring --network sepolia,$(ARGS)),--network sepolia)
 	NETWORK_ARGS := --rpc-url $(SEPOLIA_RPC_URL) --private-key $(PRIVATE_KEY) --broadcast --verify --etherscan-api-key $(ETHERSCAN_API_KEY) -vvvv
 endif
 
-deploy:
+# Core NFT aka Dogo Scripts
+deploy-core-nft:
 	@forge script script/DeployCoreNft.s.sol:DeployCoreNft $(NETWORK_ARGS)
 
-mint:
-	@forge script script/Interactions.s.sol:MintCoreNft $(NETWORK_ARGS)
+mint-dogo-nft:
+	@forge script script/CoreNftInteractions.s.sol:MintCoreNft $(NETWORK_ARGS)
+
+# Moodify NFT Scripts
+deploy-moodify-nft:
+	@forge script script/DeployMoodifyNft.s.sol:DeployMoodifyNft $(NETWORK_ARGS)
+
+mint-moodify-nft: 
+	@forge script script/MoodifyNftInteractions.s.sol:MintMoodifyNft $(NETWORK_ARGS)
+
+switch-moodify-nft:
+	@forge script script/MoodifyNftInteractions.s.sol:SwitchMoodifyNft --sig "run(uint256)" $(TOKEN_ID) $(NETWORK_ARGS)
