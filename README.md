@@ -1,6 +1,7 @@
 ## NFT_Collection
 <p>NFT_Collection is a smart contract project for dynamic NFT collection.</p>
 <p>Accounts can mint their own NFTs and then import them in their wallets.</p>
+<p>The doggie NFT is stored on IPFS Network and the Moodify NFT is stored directly on-chain.</p>
 
 <ul>
     <strong>Important:</strong>
@@ -53,6 +54,19 @@ $ git clone https://github.com/GeorgiKostadinovPro/NFT_Collection
 
 ### Scripts 
 Review the <a href="./Makefile">Makefile</a> to easily interact with the project.
+
+### Metamask Import
+<p>After you connected to Metamask with account from Anvil and set the target network to Anvil you will be able to mint and switch tokens.</p>
+<p>To mint or switch just be sure to execute the scripts properly and unable the NFT Media on Metamask.</p>
+
+<p>Here is a freshly minted Dogo NFT</p>
+<img src="./image-1.png"></img>
+
+<p>Here is a Happy NFT.</p>
+<img src="./image-2.png"></img>
+
+<p>After Switching the NFT you can import it again.</p>
+<img src="./image-3.png"></img>
 
 ### Help
 
