@@ -1,6 +1,7 @@
 ## NFT_Collection
 <p>NFT_Collection is a smart contract project for dynamic NFT collection.</p>
 <p>Accounts can mint their own NFTs and then import them in their wallets.</p>
+<p>The doggie NFT is stored on IPFS Network and the Moodify NFT is stored directly on-chain.</p>
 
 <ul>
     <strong>Important:</strong>
