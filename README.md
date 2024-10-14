@@ -59,11 +59,14 @@ Review the <a href="./Makefile">Makefile</a> to easily interact with the project
 <p>After you connected to Metamask with account from Anvil and set the target network to Anvil you will be able to mint and switch tokens.</p>
 <p>To mint or switch just be sure to execute the scripts properly and unable the NFT Media on Metamask.</p>
 
+<p>Here is a freshly minted Dogo NFT</p>
+<img src="./image-1.png"></img>
+
 <p>Here is a Happy NFT.</p>
-![alt text](image-1.png)
+<img src="./image-2.png"></img>
 
 <p>After Switching the NFT you can import it again.</p>
-![alt text](image-2.png)
+<img src="./image-3.png"></img>
 
 ### Help
 
